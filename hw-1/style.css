@@ -1,0 +1,11 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px
+}
+.item {
+    background-color: #ccc;
+    text-align: center;
+    padding: 10px;
+}
