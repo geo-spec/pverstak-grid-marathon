@@ -1,8 +1,35 @@
 .grid {
     display: grid;
     grid-gap: 10px;
-    grid-template-areas: "a a a a a" "b . d d d" "b e e f g";
+    grid-template-columns: repeat(3, 140px);
+    grid-template-rows: repeat(3, 140px);
+    justify-content: start;
+    justify-content: end;
+    justify-content: center;
+    justify-content: space-around;
+    justify-content: space-evenly;
+    justify-content: space-between;
+
+    justify-content: start;
+
+    align-content: start;
+    align-content: end;
+    align-content: center;
+    align-content: space-around;
+    align-content: space-evenly;
+    align-content: space-between;
+
+    align-content: start;
+
+    justify-items: start;
+    justify-items: end;
+    justify-items: stretch;
+
+    align-items: center;
+    align-items: stretch;
+
     padding: 10px;
+    height: 90vh;
 }
 .item {
     background-color: #ccc;
@@ -10,24 +37,10 @@
     padding: 20px 10px;
 }
 
-.item-a {
-    grid-area: a;
+.active {
+    justify-self: start;
+    justify-self: end;
+    justify-self: center;
+    align-self: center;
 }
-.item-b {
-    grid-area: b;
-}
-.item-c {
-    grid-area: c;
-}
-.item-d {
-    grid-area: d;
-}
-.item-e {
-    grid-area: e;
-}
-.item-f {
-    grid-area: f;
-}
-.item-g {
-    grid-area: g;
-}
+
