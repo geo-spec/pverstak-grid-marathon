@@ -1,0 +1,26 @@
+.grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 140px);
+    grid-template-rows: repeat(3, 140px);
+
+
+    padding: 10px;
+    height: 90vh;
+}
+.item {
+    background-color: #ccc;
+    text-align: center;
+    padding: 20px 10px;
+}
+.active {
+    grid-column: 2/4;
+}
+
+/*.active {*/
+/*    justify-self: start;*/
+/*    justify-self: end;*/
+/*    justify-self: center;*/
+/*    align-self: center;*/
+/*}*/
+
